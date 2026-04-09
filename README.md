@@ -113,6 +113,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 * Air Quality Metrics
 * Gas Indices
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5078670-742f-4be8-a0ef-70ed37dac254" />
 
 ---
 
