@@ -100,7 +100,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 ---
 
-### 🌫 Outdoor Air Quality Node
+### 🌫 Outdoor Air Quality Node (`0007`)
 
 **Sensors:**
 
