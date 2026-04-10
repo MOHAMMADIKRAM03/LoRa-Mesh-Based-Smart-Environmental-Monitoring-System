@@ -1,10 +1,6 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-#include <SPI.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_ILI9341.h>
-
 #include <SensirionI2cSht4x.h>
 #include <SensirionI2CSgp41.h>
 #include <VOCGasIndexAlgorithm.h>
@@ -12,15 +8,26 @@
 
 #define NO_ERROR 0
 
-/* TFT PINS */
+/* -------- LORA CONFIG -------- */
+#define NODE_ADDR "0007"
+#define DEST_ADDR "0001"
 
-#define TFT_CS 10
-#define TFT_DC 8
-#define TFT_RST 9
-#define TFT_MOSI 7
-#define TFT_SCLK 6
+#define LORA_RX 4
+#define LORA_TX 5
 
-Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
+HardwareSerial loraSerial(2);
+
+// HEX ENCODER
+String toHex(String input) {
+  const char* hex = "0123456789ABCDEF";
+  String out = "";
+  for (int i = 0; i < input.length(); i++) {
+    byte b = input[i];
+    out += hex[b >> 4];
+    out += hex[b & 0x0F];
+  }
+  return out;
+}
 
 /* Sensors */
 
@@ -30,6 +37,7 @@ SensirionI2CSgp41 sgp41;
 VOCGasIndexAlgorithm voc_algorithm;
 NOxGasIndexAlgorithm nox_algorithm;
 
+/* CO2 UART */
 HardwareSerial co2Serial(1);
 
 static char errorMessage[128];
@@ -55,33 +63,19 @@ void setup() {
 
   Serial.println("Air Quality System Start");
 
-  /* TFT */
-
-  SPI.begin(TFT_SCLK, -1, TFT_MOSI, TFT_CS);
-  SPI.setFrequency(20000000);
-
-  tft.begin();
-  tft.setRotation(3);
-  tft.fillScreen(ILI9341_BLACK);
-
-  tft.setTextColor(ILI9341_WHITE);
-  tft.setTextSize(2);
-  tft.setCursor(80,10);
-  tft.print("AIR MONITOR");
-
-  /* I2C */
-
-  Wire.begin(1,2);
+  /* I2C FIX (NO CONFLICT NOW) */
+  Wire.begin(8, 9);
 
   /* SHT4x + SGP41 */
-
   sht4x.begin(Wire, SHT40_I2C_ADDR_44);
   sgp41.begin(Wire);
   sht4x.softReset();
 
-  /* CO2 */
+  /* CO2 UART */
+  co2Serial.begin(9600, SERIAL_8N1, 18, 19);
 
-  co2Serial.begin(9600, SERIAL_8N1, 4, 5);
+  /* LORA UART */
+  loraSerial.begin(115200, SERIAL_8N1, LORA_RX, LORA_TX);
 
   Serial.println("Sensor warming up...");
   delay(10000);
@@ -143,7 +137,7 @@ void loop() {
     co2ppm = (response[3] << 8) | response[4];
   }
 
-  /* SERIAL */
+  /* SERIAL OUTPUT */
 
   Serial.println("------ AIR QUALITY ------");
 
@@ -163,84 +157,26 @@ void loop() {
 
   Serial.println("-------------------------");
 
-  /* TFT */
+  /* 📡 LORA SEND */
 
-  tft.fillScreen(ILI9341_BLACK);
+  String payload = "{src:" + String(NODE_ADDR) +
+                   ",temp:" + String(temperature,1) +
+                   ",hum:"  + String(humidity,1) +
+                   ",co2:"  + String(co2ppm) +
+                   ",voc:"  + String(voc_index) +
+                   ",nox:"  + String(nox_index) +
+                   ",pm25:" + String(mc2p5) +
+                   ",pm10:" + String(mc10p0) +
+                   "}\n";
 
-  tft.fillRect(0,0,240,30,ILI9341_BLUE);
+  String hexPayload = toHex(payload);
 
-  tft.setTextColor(ILI9341_WHITE);
-  tft.setTextSize(2);
-  tft.setCursor(40,8);
-  tft.print("AIR QUALITY");
+  String cmd = "at+ab senddata " + String(DEST_ADDR) + " " + hexPayload + "\r\n";
 
-  tft.setCursor(10,40);
-  tft.setTextColor(ILI9341_CYAN);
-  tft.print("Temp: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(temperature);
+  Serial.println("📡 TX JSON:");
+  Serial.println(payload);
 
-  tft.setCursor(10,65);
-  tft.setTextColor(ILI9341_BLUE);
-  tft.print("Humidity: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(humidity);
-
-  tft.setCursor(10,90);
-  tft.setTextColor(ILI9341_ORANGE);
-  tft.print("CO2: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(co2ppm);
-
-  tft.setCursor(10,115);
-  tft.setTextColor(ILI9341_MAGENTA);
-  tft.print("VOC: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(voc_index);
-
-  tft.setCursor(10,140);
-  tft.setTextColor(ILI9341_YELLOW);
-  tft.print("NOx: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(nox_index);
-
-  tft.setCursor(10,165);
-  tft.setTextColor(ILI9341_GREEN);
-  tft.print("PM1: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(mc1p0);
-
-  tft.setCursor(10,190);
-
-  if(mc2p5 < 12)
-    tft.setTextColor(ILI9341_GREEN);
-  else if(mc2p5 < 35)
-    tft.setTextColor(ILI9341_YELLOW);
-  else
-    tft.setTextColor(ILI9341_RED);
-
-  tft.print("PM2.5: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(mc2p5);
-
-  tft.setCursor(10,215);
-  tft.setTextColor(ILI9341_GREEN);
-  tft.print("PM4: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(mc4p0);
-
-  tft.setCursor(10,240);
-
-  if(mc10p0 < 50)
-    tft.setTextColor(ILI9341_GREEN);
-  else if(mc10p0 < 100)
-    tft.setTextColor(ILI9341_YELLOW);
-  else
-    tft.setTextColor(ILI9341_RED);
-
-  tft.print("PM10: ");
-  tft.setTextColor(ILI9341_WHITE);
-  tft.print(mc10p0);
+  loraSerial.print(cmd);
 
   delay(2000);
 }
