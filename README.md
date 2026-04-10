@@ -43,7 +43,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * Converts JSON → HEX
 * Sends via LoRa (LR71)
 
-### 🔹 Master Node (ESP32-S3)
+### 🔹 Master Node (DOIT ESP32 DevKit V1)
 
 * Receives LoRa packets
 * Decodes HEX → JSON
