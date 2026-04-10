@@ -62,7 +62,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * TDS Sensor
 * Turbidity Sensor
 * DS18B20
-<<p align="center">
+<p align="center">
   <img src="https://github.com/user-attachments/assets/35026469-a1e8-4002-97b0-27b87e14dbcc" width="350"/>
   <img src="https://github.com/user-attachments/assets/9eaaeee2-9aec-4718-bd4f-71510f922d63" width="350"/>
 </p>
@@ -96,7 +96,10 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * MQ136 (H₂S)
 * MQ137 (NH₃)
 * CCS811 (CO₂, TVOC)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df8b5742-6c37-4caf-96d7-2c3048a77f7b"  width="350"/>
+  <img src="https://github.com/user-attachments/assets/7ce47c0d-6c6b-4e8a-97bf-4a34c2c0096d"width="350"/>
+</p>
 **Outputs:**
 
 * Gas concentrations
