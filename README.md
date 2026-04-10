@@ -49,6 +49,11 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * Decodes HEX → JSON
 * Identifies source node
 * Publishes to MQTT topics
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1fe1d0b9-0212-4eec-8a7d-954ef3df1014" width="350"/>
+  <img src="https://github.com/user-attachments/assets/53b20ded-b3c3-4ec7-a85c-80d6f1c6e0fe"  width="350"/>
+</p>
+
 
 ---
 
