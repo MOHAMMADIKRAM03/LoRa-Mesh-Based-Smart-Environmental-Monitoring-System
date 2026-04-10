@@ -117,7 +117,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * SGP41 → VOC & NOx
 * Senseair S8 → CO₂
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c5078670-742f-4be8-a0ef-70ed37dac254" width="500"/>
+  <img src="https://github.com/user-attachments/assets/c5078670-742f-4be8-a0ef-70ed37dac254" width="800"/>
 </p>
 
 **Outputs:**
