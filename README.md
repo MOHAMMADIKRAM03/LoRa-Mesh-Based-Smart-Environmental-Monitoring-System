@@ -61,9 +61,10 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * pH Sensor
 * TDS Sensor
 * Turbidity Sensor
-* DS18B20
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/35026469-a1e8-4002-97b0-27b87e14dbcc" />
-<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/9eaaeee2-9aec-4718-bd4f-71510f922d63" />
+* DS18B20<p align="center">
+  <img src="https://github.com/user-attachments/assets/35026469-a1e8-4002-97b0-27b87e14dbcc" width="400"/>
+  <img src="https://github.com/user-attachments/assets/9eaaeee2-9aec-4718-bd4f-71510f922d63" width="400"/>
+</p>
 
 
 **Outputs:**
