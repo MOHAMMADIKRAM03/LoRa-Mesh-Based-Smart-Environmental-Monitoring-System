@@ -289,4 +289,5 @@ If you like this project:
 ## 📬 Contact
 
 * GitHub: https://github.com/MOHAMMADIKRAM03
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* Email: ikrammohammad2004@gmail.com
+* Linkedin: https://www.linkedin.com/in/ikram-mohammad-38966726b/
