@@ -87,6 +87,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 
 </p>
+
 **Outputs:**
 
 * Temperature, Humidity, Pressure
@@ -106,6 +107,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
   <img src="https://github.com/user-attachments/assets/df8b5742-6c37-4caf-96d7-2c3048a77f7b"  width="350"/>
   <img src="https://github.com/user-attachments/assets/7ce47c0d-6c6b-4e8a-97bf-4a34c2c0096d"width="350"/>
 </p>
+
 **Outputs:**
 
 * Gas concentrations
