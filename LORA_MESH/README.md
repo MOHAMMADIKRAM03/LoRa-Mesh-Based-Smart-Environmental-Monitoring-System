@@ -23,10 +23,9 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 ---
 
 ## 📡 System Architecture
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/3f2b7fd7-58ce-4844-8141-1fa47bf887ed" width="350"/>
-  <img src="https://github.com/user-attachments/assets/339f5155-57e0-4569-8b10-9d0e0b61b519"  width="350"/>
-</p>
+
+<img width="684" height="581" alt="image" src="https://github.com/user-attachments/assets/c3da27f2-8272-44b5-bcf7-51646f64d50b" />
+<img width="881" height="309" alt="image" src="https://github.com/user-attachments/assets/41a36eb1-d5d2-483a-93fd-e93a7725fdb5" />
 ---
 
 ## 🧠 How It Works
