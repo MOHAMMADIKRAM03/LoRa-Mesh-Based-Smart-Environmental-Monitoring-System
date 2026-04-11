@@ -24,14 +24,8 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 ## 📡 System Architecture
 
-![System Diagram](docs/system-diagram.png)
-
-```
-[ WATER NODE ] ----\
-[ WEATHER NODE ] ---\ 
-[ WASHROOM NODE ] ----> LoRa Mesh → MASTER NODE → MQTT → Cloud / Dashboard
-[ AIR NODE ] ------/
-```
+<img src="https://github.com/user-attachments/assets/c3da27f2-8272-44b5-bcf7-51646f64d50b" width="700"/>
+<img src="https://github.com/user-attachments/assets/41a36eb1-d5d2-483a-93fd-e93a7725fdb5" width="750"/>
 
 ---
 
