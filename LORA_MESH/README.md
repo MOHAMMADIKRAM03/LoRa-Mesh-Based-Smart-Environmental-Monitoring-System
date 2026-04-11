@@ -43,12 +43,17 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * Converts JSON → HEX
 * Sends via LoRa (LR71)
 
-### 🔹 Master Node (ESP32-S3)
+### 🔹 Master Node (DOIT ESP32 DevKit V1)
 
 * Receives LoRa packets
 * Decodes HEX → JSON
 * Identifies source node
 * Publishes to MQTT topics
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1fe1d0b9-0212-4eec-8a7d-954ef3df1014" width="350"/>
+  <img src="https://github.com/user-attachments/assets/53b20ded-b3c3-4ec7-a85c-80d6f1c6e0fe"  width="350"/>
+</p>
+
 
 ---
 
@@ -62,6 +67,11 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * TDS Sensor
 * Turbidity Sensor
 * DS18B20
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/35026469-a1e8-4002-97b0-27b87e14dbcc" width="350"/>
+  <img src="https://github.com/user-attachments/assets/9eaaeee2-9aec-4718-bd4f-71510f922d63" width="350"/>
+</p>
+
 
 **Outputs:**
 
@@ -75,7 +85,12 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 * SparkFun Weather Meter Kit
 * BME280
+<p align="center">
+  <img  src="https://github.com/user-attachments/assets/4e0b80b3-547f-42a9-8e64-ba157069c2f7"  width="300"/>
+  <img  src="https://github.com/user-attachments/assets/16d03550-e7d4-44ec-9014-c36483bc8d52"   width="300"/>
+  <img  src="https://github.com/user-attachments/assets/340ee434-6330-4286-ac14-7cdfccff39c3" width="300" />
 
+</p>
 **Outputs:**
 
 * Temperature, Humidity, Pressure
@@ -91,7 +106,10 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * MQ136 (H₂S)
 * MQ137 (NH₃)
 * CCS811 (CO₂, TVOC)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/df8b5742-6c37-4caf-96d7-2c3048a77f7b"  width="350"/>
+  <img src="https://github.com/user-attachments/assets/7ce47c0d-6c6b-4e8a-97bf-4a34c2c0096d"width="350"/>
+</p>
 **Outputs:**
 
 * Gas concentrations
@@ -100,7 +118,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 ---
 
-### 🌫 Outdoor Air Quality Node
+### 🌫 Outdoor Air Quality Node (`0007`)
 
 **Sensors:**
 
@@ -108,13 +126,15 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * SHT4x → Temp & Humidity
 * SGP41 → VOC & NOx
 * Senseair S8 → CO₂
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/248eb7fc-3b09-4a74-8034-329ba4566794"  width="350"/>
+  <img src="https://github.com/user-attachments/assets/6087254b-c2ca-40f7-9fe6-e3165922632e" width="350"/>
+</p>
 
 **Outputs:**
 
 * Air Quality Metrics
 * Gas Indices
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5078670-742f-4be8-a0ef-70ed37dac254" />
-
 ---
 
 ## 🔌 Hardware
@@ -271,4 +291,5 @@ If you like this project:
 ## 📬 Contact
 
 * GitHub: https://github.com/MOHAMMADIKRAM03
-* Email: [your-email@example.com](mailto:your-email@example.com)
+* Email: ikrammohammad2004@gmail.com
+* Linkedin: https://www.linkedin.com/in/ikram-mohammad-38966726b/
