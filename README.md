@@ -86,9 +86,9 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 * SparkFun Weather Meter Kit
 * BME280
 <p align="center">
-  <img  src="https://github.com/user-attachments/assets/4e0b80b3-547f-42a9-8e64-ba157069c2f7"  width="350"/>
-  <img  src="https://github.com/user-attachments/assets/16d03550-e7d4-44ec-9014-c36483bc8d52"   width="350"/>
-  <img  src="https://github.com/user-attachments/assets/340ee434-6330-4286-ac14-7cdfccff39c3" width="200" />
+  <img  src="https://github.com/user-attachments/assets/4e0b80b3-547f-42a9-8e64-ba157069c2f7"  width="300"/>
+  <img  src="https://github.com/user-attachments/assets/16d03550-e7d4-44ec-9014-c36483bc8d52"   width="300"/>
+  <img  src="https://github.com/user-attachments/assets/340ee434-6330-4286-ac14-7cdfccff39c3" width="300" />
 
 </p>
 **Outputs:**
