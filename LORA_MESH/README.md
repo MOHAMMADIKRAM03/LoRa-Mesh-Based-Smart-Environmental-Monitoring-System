@@ -26,6 +26,7 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 
 <img width="684" height="581" alt="image" src="https://github.com/user-attachments/assets/c3da27f2-8272-44b5-bcf7-51646f64d50b" />
 <img width="881" height="309" alt="image" src="https://github.com/user-attachments/assets/41a36eb1-d5d2-483a-93fd-e93a7725fdb5" />
+
 ---
 
 ## 🧠 How It Works
