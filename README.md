@@ -57,7 +57,9 @@ pH, TDS, turbidity sensing
 Water temperature measurement
 
 👉 Ensures **safe and clean water conditions**
+
 ---
+
 **🌤 Node 3 – Weather Monitoring (0006)**
 
 Wind speed & direction
@@ -68,6 +70,7 @@ Atmospheric pressure, temperature, humidity
 
 👉 Provides **real-time environmental conditions**
 
+---
 
 **🚻 Node 4 – Washroom Hygiene Monitoring (0004)**
 
@@ -77,6 +80,7 @@ Computes hygiene index
 
 👉 Helps maintain **public sanitation standards**
 
+---
 
 **🧠 Master Node Role**
 ---
