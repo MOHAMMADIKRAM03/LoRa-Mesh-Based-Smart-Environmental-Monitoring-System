@@ -37,9 +37,13 @@ A distributed set of ESP32-S3 + LoRa sensor nodes work together in a mesh networ
 Node	Function
 
 Node 1	🌫 Outdoor Air Quality Monitoring
+
 Node 2	💧 Water Quality Monitoring
+
 Node 3	🌤 Weather Monitoring
+
 Node 4	🚻 Washroom Hygiene Monitoring
+
 🔍 Node Responsibilities
 🌫 Node 1 – Air Quality Monitoring (0007)
 Measures PM levels (PM1, PM2.5, PM10)
