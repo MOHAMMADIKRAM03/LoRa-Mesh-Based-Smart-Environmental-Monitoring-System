@@ -28,6 +28,60 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 <img src="https://github.com/user-attachments/assets/41a36eb1-d5d2-483a-93fd-e93a7725fdb5" width="750"/>
 
 ---
+🧠 System Components (Node Architecture)
+
+A distributed set of ESP32-S3 + LoRa sensor nodes work together in a mesh network. Each node is dedicated to a specific monitoring domain, while the Master Node aggregates and publishes data via MQTT.
+
+🌿 Sensor Nodes Overview
+Node	Function
+Node 1	🌫 Outdoor Air Quality Monitoring
+Node 2	💧 Water Quality Monitoring
+Node 3	🌤 Weather Monitoring
+Node 4	🚻 Washroom Hygiene Monitoring
+🔍 Node Responsibilities
+🌫 Node 1 – Air Quality Monitoring (0007)
+Measures PM levels (PM1, PM2.5, PM10)
+Detects VOC, NOx, CO₂
+Tracks temperature & humidity
+
+👉 Used for outdoor pollution analysis
+
+💧 Node 2 – Water Quality Monitoring (0002)
+pH, TDS, turbidity sensing
+Water temperature measurement
+
+👉 Ensures safe and clean water conditions
+
+🌤 Node 3 – Weather Monitoring (0006)
+Wind speed & direction
+Rainfall detection
+Atmospheric pressure, temperature, humidity
+
+👉 Provides real-time environmental conditions
+
+🚻 Node 4 – Washroom Hygiene Monitoring (0004)
+Detects NH₃, H₂S, CO₂, TVOC
+Computes hygiene index
+
+👉 Helps maintain public sanitation standards
+
+🧠 Master Node Role
+Collects data from all LoRa nodes
+Decodes HEX → JSON
+Identifies source node
+Publishes structured data to MQTT topics
+💡 Concept Analogy
+
+Think of the system like a postal network:
+
+📦 Nodes → Senders
+📡 LoRa Mesh → Delivery network
+🧠 Master Node → Sorting hub
+☁️ MQTT → Final delivery to applications
+🔗 Communication Flow
+Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
+
+---
 
 ## 🧠 How It Works
 
