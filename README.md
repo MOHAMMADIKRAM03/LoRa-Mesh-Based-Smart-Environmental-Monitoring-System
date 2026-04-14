@@ -28,11 +28,11 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 <img src="https://github.com/user-attachments/assets/41a36eb1-d5d2-483a-93fd-e93a7725fdb5" width="750"/>
 
 ---
-🧠 System Components (Node Architecture)
+#🧠 System Components (Node Architecture)
 
 A distributed set of ESP32-S3 + LoRa sensor nodes work together in a mesh network. Each node is dedicated to a specific monitoring domain, while the Master Node aggregates and publishes data via MQTT.
 
-🌿 Sensor Nodes Overview
+##🌿 Sensor Nodes Overview
 
 Node	Function
 
@@ -44,7 +44,7 @@ Node 3	🌤 Weather Monitoring
 
 Node 4	🚻 Washroom Hygiene Monitoring
 
-🔍 Node Responsibilities
+###🔍 Node Responsibilities
 🌫 Node 1 – Air Quality Monitoring (0007)
 Measures PM levels (PM1, PM2.5, PM10)
 Detects VOC, NOx, CO₂
@@ -71,7 +71,7 @@ Computes hygiene index
 
 👉 Helps maintain public sanitation standards
 
-🧠 Master Node Role
+####🧠 Master Node Role
 Collects data from all LoRa nodes
 Decodes HEX → JSON
 Identifies source node
