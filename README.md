@@ -33,7 +33,9 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 A distributed set of ESP32-S3 + LoRa sensor nodes work together in a mesh network. Each node is dedicated to a specific monitoring domain, while the Master Node aggregates and publishes data via MQTT.
 
 🌿 Sensor Nodes Overview
+
 Node	Function
+
 Node 1	🌫 Outdoor Air Quality Monitoring
 Node 2	💧 Water Quality Monitoring
 Node 3	🌤 Weather Monitoring
