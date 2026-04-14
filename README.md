@@ -111,6 +111,7 @@ Think of the system like a postal network:
 **🔗 Communication Flow**
 ---
 Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
+<img width="1919" height="831" alt="image" src="https://github.com/user-attachments/assets/f6886cf0-4cf0-4271-8d4c-936bcf1a9e14" />
 
 ---
 
@@ -154,7 +155,8 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-* Temperature, pH, TDS, Turbidity
+<img width="1919" height="729" alt="image" src="https://github.com/user-attachments/assets/8baa9fe7-3a92-42ce-9827-f24250837daf" />
+
 
 ---
 
@@ -175,9 +177,8 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-* Temperature, Humidity, Pressure
-* Wind Speed & Direction
-* Rainfall
+<img width="1910" height="849" alt="image" src="https://github.com/user-attachments/assets/35811a27-93d9-43da-b866-addf76fa969c" />
+
 
 ---
 
@@ -195,9 +196,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-* Gas concentrations
-* Hygiene Index
-* Status (EXCELLENT → CRITICAL)
+<img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/0f7f381c-cf46-4c76-92b4-d65a8d5f2144" />
 
 ---
 
@@ -215,9 +214,8 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 </p>
 
 **Outputs:**
+<img width="1919" height="859" alt="image" src="https://github.com/user-attachments/assets/d732b7df-5736-4745-95a0-2a22169f8e58" />
 
-* Air Quality Metrics
-* Gas Indices
 ---
 
 ## 🔌 Hardware
