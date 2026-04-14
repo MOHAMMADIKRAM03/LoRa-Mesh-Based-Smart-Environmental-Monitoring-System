@@ -47,6 +47,7 @@ Tracks temperature & humidity
 
 👉 Used for **outdoor pollution analysis**
 
+
 **💧 Node 2 – Water Quality Monitoring (0002)**
 
 pH, TDS, turbidity sensing
@@ -54,6 +55,7 @@ pH, TDS, turbidity sensing
 Water temperature measurement
 
 👉 Ensures **safe and clean water conditions**
+
 
 **🌤 Node 3 – Weather Monitoring (0006)**
 
@@ -65,6 +67,7 @@ Atmospheric pressure, temperature, humidity
 
 👉 Provides **real-time environmental conditions**
 
+
 **🚻 Node 4 – Washroom Hygiene Monitoring (0004)**
 
 Detects NH₃, H₂S, CO₂, TVOC
@@ -73,10 +76,15 @@ Computes hygiene index
 
 👉 Helps maintain **public sanitation standards**
 
+
 **🧠 Master Node Role**
+
 Collects data from all LoRa nodes
+
 Decodes **HEX → JSON**
+
 Identifies source node
+
 Publishes structured data to MQTT topics
 
 **💡 Concept Analogy**
