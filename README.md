@@ -30,6 +30,8 @@ Designed for **smart cities, environmental monitoring, and industrial IoT applic
 ---
 **🧠 System Components (Node Architecture)**
 ---
+<img width="960" height="1280" alt="image" src="https://github.com/user-attachments/assets/1bb645c6-e9aa-4301-a3a5-e571729a8a89" />
+
 A distributed set of ESP32-S3 + LoRa sensor nodes work together in a mesh network. Each node is dedicated to a specific monitoring domain, while the Master Node aggregates and publishes data via MQTT.
 
 <img width="733" height="309" alt="image" src="https://github.com/user-attachments/assets/097c1bef-b264-4538-a4ff-a63de272357b" />
