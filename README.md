@@ -111,7 +111,7 @@ Think of the system like a postal network:
 **🔗 Communication Flow**
 ---
 Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
-<img width="1919" height="831" alt="image" src="https://github.com/user-attachments/assets/f6886cf0-4cf0-4271-8d4c-936bcf1a9e14" />
+<img width="1002" height="676" alt="image" src="https://github.com/user-attachments/assets/4f213663-e42b-487c-bcdb-e6f5c7a5f2a8" />
 
 ---
 
@@ -155,7 +155,8 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-<img width="1919" height="729" alt="image" src="https://github.com/user-attachments/assets/8baa9fe7-3a92-42ce-9827-f24250837daf" />
+
+<img width="525" height="887" alt="image" src="https://github.com/user-attachments/assets/8cd1df62-9141-4c1d-836b-ab4e57e3b5b8" />
 
 
 ---
@@ -177,7 +178,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-<img width="1910" height="849" alt="image" src="https://github.com/user-attachments/assets/35811a27-93d9-43da-b866-addf76fa969c" />
+<img width="543" height="796" alt="image" src="https://github.com/user-attachments/assets/a7a87cd4-9b9e-4a3c-bc82-c3d71b80c8b6" />
 
 
 ---
@@ -196,7 +197,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-<img width="1919" height="785" alt="image" src="https://github.com/user-attachments/assets/0f7f381c-cf46-4c76-92b4-d65a8d5f2144" />
+<img width="554" height="859" alt="image" src="https://github.com/user-attachments/assets/32b99cdd-5d00-40ea-a44e-376cacba09b7" />
 
 ---
 
@@ -214,7 +215,8 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 </p>
 
 **Outputs:**
-<img width="1919" height="859" alt="image" src="https://github.com/user-attachments/assets/d732b7df-5736-4745-95a0-2a22169f8e58" />
+
+<img width="549" height="839" alt="image" src="https://github.com/user-attachments/assets/6c0b43d9-9b60-4b43-8535-3e7351bf70e3" />
 
 ---
 
