@@ -111,7 +111,7 @@ Think of the system like a postal network:
 **🔗 Communication Flow**
 ---
 Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
-<img width="1002" height="676" alt="image" src="https://github.com/user-attachments/assets/4f213663-e42b-487c-bcdb-e6f5c7a5f2a8" />
+
 
 ---
 
@@ -132,6 +132,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 <p align="center">
   <img src="https://github.com/user-attachments/assets/1fe1d0b9-0212-4eec-8a7d-954ef3df1014" width="350"/>
   <img src="https://github.com/user-attachments/assets/53b20ded-b3c3-4ec7-a85c-80d6f1c6e0fe"  width="350"/>
+   <img src="https://github.com/user-attachments/assets/4f213663-e42b-487c-bcdb-e6f5c7a5f2a8"  width="350"/>
 </p>
 
 
