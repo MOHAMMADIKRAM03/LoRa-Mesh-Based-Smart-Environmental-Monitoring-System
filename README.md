@@ -156,8 +156,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-
-<img width="525" height="887" alt="image" src="https://github.com/user-attachments/assets/8cd1df62-9141-4c1d-836b-ab4e57e3b5b8" />
+   <img src="https://github.com/user-attachments/assets/8cd1df62-9141-4c1d-836b-ab4e57e3b5b8"  width="550"/>
 
 
 ---
@@ -179,7 +178,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-<img width="543" height="796" alt="image" src="https://github.com/user-attachments/assets/a7a87cd4-9b9e-4a3c-bc82-c3d71b80c8b6" />
+   <img src="https://github.com/user-attachments/assets/a7a87cd4-9b9e-4a3c-bc82-c3d71b80c8b6"  width="550"/>
 
 
 ---
@@ -198,7 +197,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-<img width="554" height="859" alt="image" src="https://github.com/user-attachments/assets/32b99cdd-5d00-40ea-a44e-376cacba09b7" />
+<img  src="https://github.com/user-attachments/assets/32b99cdd-5d00-40ea-a44e-376cacba09b7"  width="550"/>
 
 ---
 
@@ -217,7 +216,7 @@ Sensor Node → LoRa Mesh → Master Node → MQTT Broker → Dashboard / Cloud
 
 **Outputs:**
 
-<img width="549" height="839" alt="image" src="https://github.com/user-attachments/assets/6c0b43d9-9b60-4b43-8535-3e7351bf70e3" />
+<img  src="https://github.com/user-attachments/assets/6c0b43d9-9b60-4b43-8535-3e7351bf70e3"  width="550"/>
 
 ---
 
